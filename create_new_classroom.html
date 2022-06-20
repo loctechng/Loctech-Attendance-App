@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Classroom</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Bootstrap End -->
+</head>
+<body>
+    <!-- Form Layout -->
+    <div class="container-lg">
+        <div class="text-center">
+            <h1>+ CREATE NEW CLASSROOM</h1>
+        </div>
+        
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form action="#">
+                    <label for="classname" class="form-label">Class Name:</label>
+                    <input type="text" name="className" class="form-control" id="classname" placeholder="e.g. johndoe@gmail,com">
+
+                    <label for="section" class="form-label">Section:</label>
+                    <select class="form-select" id="section">
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
+
+                    <label for="days" class="form-label">Days:</label>
+                    <select class="form-select" id="days">
+                        <option value="mon_tues_thur">Monday, Tuesday, Thursday</option>
+                        <option value="wed_fri_sat">Wednesday, Friday, Saturday</option>
+                        <option value="others">Others</option>
+                    </select>
+
+                    <label for="number_of_weeks">Number of Weeks</label>
+                    <input type="number" class="form-control" name="number_of_weeks" id="number_of_weeks" placeholder="insert number">
+
+                    <div class="my-4 text-end">
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JS Bootstrap -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap End -->
+</body>
+</html>
